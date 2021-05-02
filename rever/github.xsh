@@ -129,7 +129,7 @@ def get_oauth_token(client_id, *, headers=None, scope='repo'):
     interval = result['interval']
     request_time = time.time()
 
-    print_color("{YELLOW}Go to "+ verification_uri + "and enter this code:\n")
+    print_color("{YELLOW}Go to "+ verification_uri + " and enter this code:\n")
     print_color("{GREEN}" + user_code + "\n")
     print_color("{YELLOW}Press Enter to open a webbrowser to " + verification_uri)
     input()
